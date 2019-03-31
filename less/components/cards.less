@@ -1,0 +1,32 @@
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  flex: 0 0 270px;
+  height: 200px;
+  margin: 20px 10px;
+  box-shadow: 0 4px 10px @raisin-black;
+  background: @khaki;
+
+  &__header {
+    height: 30%;
+    background: @raisin-black;
+    padding: 20px 15px 20px;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: @khaki;
+    margin: 0;
+  }
+
+  &__body {
+    height: 70%;
+    margin: 0;
+    padding: 15px;
+  }
+}
