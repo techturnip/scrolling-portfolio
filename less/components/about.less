@@ -1,14 +1,10 @@
-.about-me {
-  display: flex;
-  align-items: center;
-
+.about {
   strong {
     font-weight: 600;
   }
 
   &__media {
-    display: flex;
-    justify-content: space-around;
+    margin-right: 20px;
   }
 
   &__img {
@@ -17,15 +13,50 @@
   }
 
   &__content {
-    flex: 1 1 auto;
-    margin-left: 40px;
-    color: @khaki;
-    height: 640px;
-    background: @raisin-black-trans;
-    box-shadow: 0 4px 20px @raisin-black;
-    border-radius: 10px;
-    padding: 40px;
+    width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+  }
 
+  &__item {
+    margin: 20px 20px;
+    color: @khaki-light;
+    background: @raisin-black-trans;
+    box-shadow: 0 4px 10px @raisin-black-trans;
+    border-radius: 10px;
+    background: @khaki-trans;
+    padding: 20px;
+
+
+    &--header {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-basis: fill;
+      height: 10vh;
+      background: @crayola-green-trans;
+      width: 100%;
+
+      h2 {
+        margin-right: 20px;
+        padding: 20px;
+        border-right: solid 1px @khaki-light;
+        align-self: center;
+        border-bottom: solid 1px @khaki-light;
+        border-radius: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        align-self: center;
+      }
+    }
+
+    &--content {
+      font-size: 18px;
+      line-height: 1.6em;
+      letter-spacing: 0.1em;
+    }
   }
 
 

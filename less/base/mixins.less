@@ -2,3 +2,23 @@
   width: @width;
   margin: 0 auto;
 }
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2) translateX(4rem);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation() {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
