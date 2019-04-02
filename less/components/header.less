@@ -1,14 +1,21 @@
 .header {
+  flex: 0 0 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
   overflow: auto;
-  background: @salmon-raisin-gradient;
-  // background: @dark-salmon;
+  // background: @salmon-raisin-gradient;
   line-height: 1.4;
   color: @khaki-light;
+
+  &__wrapper {
+    background: @raisin-black-trans;
+    padding: 100px;
+    border-radius: 20px;
+    text-align: center;
+  }
 
   &__heading {
     margin: 0;
