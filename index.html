@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tyler Turnipseed</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Tyler Turnipseed</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet" />
+  <body>
+    <div id="horizontalWrapper" class="horizontalWrapper">
+      <header id="home" class="header">
+        <div
+          data-aos="flip-right"
+          data-aos-duration="2000"
+          class="header__wrapper"
+        >
+          <h1
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            class="header__heading"
+          >
+            Tyler Turnipseed
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="header__subheading"
+          >
+            Web Developer
+          </p>
+        </div>
+      </header>
+      <!-- ./header -->
 
-  <link rel="stylesheet" href="css/index.css" />
-</head>
+      <section id="about" class="about-me section">
+        <div class="about-me__media">
+          <img
+            src="img/me.jpg"
+            alt="A picture of Tyler Turnipseed"
+            class="about-me__img"
+          />
+        </div>
+        <div class="about-me__content">
+          <h2>My name is <strong>Tyler Turnipseed</strong></h2>
+          <p>I'm an aspiring web developer</p>
+        </div>
+      </section>
 
-<body>
-  <div id="horizontalWrapper" class="horizontalWrapper">
-    <header id="home" class="header">
-      <div data-aos="flip-right" data-aos-duration="2000" class="header__wrapper">
-        <h1 data-aos="fade-down" data-aos-duration="3000" class="header__heading">Tyler Turnipseed</h1>
-        <p data-aos="fade-up" data-aos-duration="3000" class="header__subheading">Web Developer</p>
-      </div>
-    </header>
-    <!-- ./header -->
-
-    <section id="about" class="about-me section">
-      <div class="about-me__media">
-        <img src="img/me.jpg" alt="A picture of Tyler Turnipseed" class="about-me__img">
-      </div>
-      <div class="about-me__content">
-        <h2>My name is <strong>Tyler Turnipseed</strong></h2>
-        <p>I'm an aspiring web developer</p>
-      </div>
-    </section>
-
-    <section id="portfolio" class="section">
-
-    </section>
-  </div>
-
-  <nav class="navbar">
-    <div class="navbar__wrapper">
-
-      <a class="navbar__brand" href="#home">@techTurnip</a>
-
-      <a class="navbar__link" href="#about">About</a>
-      <a class="navbar__link" href="#portfolio">Portfolio</a>
-      <a class="navbar__link" href="#">Resume</a>
-      <a class="navbar__link" href="#">Contact</a>
+      <section id="portfolio" class="section"></section>
     </div>
-    <!-- ./navbar__wrapper -->
-  </nav>
-  <!-- ./navbar -->
 
-  <script src="js/mousewheel.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+    <nav class="navbar">
+      <div class="navbar__wrapper">
+        <a class="navbar__brand" href="#home">@techTurnip</a>
+        <a class="navbar__link" href="#about">About</a>
+        <a class="navbar__link" href="#portfolio">Portfolio</a>
+        <a class="navbar__link" href="#">Resume</a>
+        <a class="navbar__link" href="#">Contact</a>
+      </div>
+      <!-- ./navbar__wrapper -->
+    </nav>
+    <!-- ./navbar -->
 
+    <script src="js/mousewheel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

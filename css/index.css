@@ -272,6 +272,7 @@ h6 {
   padding: 100px;
   border-radius: 20px;
   text-align: center;
+  box-shadow: 0 10px 20px rgba(30, 30, 36, 0.8);
 }
 .header__heading {
   margin: 0;
