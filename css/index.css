@@ -221,6 +221,8 @@ body {
   color: #1e1e24;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(190deg, #f9957c, #1e1e24);
+  background-size: cover;
+  background-attachment: fixed;
   height: 100%;
 }
 h1,
@@ -232,8 +234,36 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
 }
-/* Color Palette */
-/* Dimensions */
+#horizontalWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 93.8vh;
+}
+@media only screen and (max-width: 600px) {
+  #horizontalWrapper {
+    height: 91vh;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+  background: rgba(30, 30, 36, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: #c4af9a;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  padding: 40px;
+}
+.content__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @keyframes pulse {
   from {
     transform: scale(1);
@@ -245,34 +275,25 @@ h6 {
     transform: scale(1);
   }
 }
-.horizontalWrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  height: 94vh;
-}
-::-webkit-scrollbar {
-  display: none;
-  background: #1e1e24;
-}
-::-webkit-scrollbar-thumb {
-  background: #f9f7f5;
-}
-.content {
-  display: flex;
-  padding: 40px;
-}
-.content__section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* Color Palette */
+/* Dimensions */
+/* Typography */
 .header {
   color: #ded3c7;
   margin-left: 10rem;
   white-space: nowrap;
+}
+@media only screen and (max-width: 1028px) {
+  .header {
+    margin-left: 2rem;
+    width: 96vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-left: 1rem;
+    width: 93vw;
+  }
 }
 .header__wrapper {
   padding: 80px;
@@ -280,6 +301,11 @@ h6 {
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(30, 30, 36, 0.8);
   text-align: center;
+}
+@media only screen and (max-width: 1028px) {
+  .header__wrapper {
+    padding: 60px;
+  }
 }
 .header__heading {
   border-bottom: solid 1px #c4af9a;
@@ -289,11 +315,31 @@ h6 {
   font-weight: 500;
   white-space: nowrap;
 }
+@media only screen and (max-width: 1028px) {
+  .header__heading {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__heading {
+    font-size: 2rem;
+  }
+}
 .header__subheading {
   white-space: nowrap;
   margin: 0;
   padding-top: 5px;
   font-size: 2rem;
+}
+@media only screen and (max-width: 1028px) {
+  .header__subheading {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__subheading {
+    font-size: 1.2rem;
+  }
 }
 .header .fab {
   margin-top: 20px;
@@ -308,6 +354,16 @@ h6 {
   color: #f9f7f5;
   transform: scale(1.3);
   transition: ease 0.4s;
+}
+@media only screen and (max-width: 1028px) {
+  .header .fab {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header .fab {
+    font-size: 2rem;
+  }
 }
 .navbar {
   display: block;
@@ -330,13 +386,26 @@ h6 {
   text-decoration: none;
   font-size: 4rem;
 }
+@media only screen and (max-width: 1028px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar .arrow-nav {
+    display: none;
+  }
+}
 .navbar__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 80px;
-  width: 896px;
+  max-width: 896px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .navbar__wrapper {
+    flex-wrap: wrap;
+  }
 }
 .navbar__brand {
   font-size: 1.6rem;
@@ -345,6 +414,12 @@ h6 {
 }
 .navbar__brand:hover {
   color: #f9f7f5;
+}
+@media only screen and (max-width: 600px) {
+  .navbar__brand {
+    width: 100%;
+    text-align: center;
+  }
 }
 .navbar__link {
   padding-top: 4px;
@@ -367,10 +442,25 @@ h6 {
   border-radius: 10px;
   box-shadow: 0 4px 20px #1e1e24;
 }
+@media only screen and (max-width: 600px) {
+  .about__img {
+    width: 70vw;
+  }
+}
 .about__content {
   width: 1000px;
   display: flex;
   flex-flow: row wrap;
+}
+@media only screen and (max-width: 1028px) {
+  .about__content {
+    width: 95vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about__content {
+    width: 95vw;
+  }
 }
 .about__item {
   margin: 20px 20px;
@@ -379,7 +469,6 @@ h6 {
   box-shadow: 0 4px 10px rgba(30, 30, 36, 0.8);
   border-radius: 10px;
   background: rgba(196, 175, 154, 0.1);
-  padding: 20px;
 }
 .about__item--header {
   display: flex;
@@ -393,17 +482,75 @@ h6 {
 .about__item--header h2 {
   margin-right: 20px;
   padding: 20px;
-  border-right: solid 1px #ded3c7;
   align-self: center;
-  border-bottom: solid 1px #ded3c7;
-  border-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .about__item--header h2 {
+    border: none;
+  }
 }
 .about__item--header p {
   font-size: 18px;
   align-self: center;
 }
+@media only screen and (max-width: 600px) {
+  .about__item--header p {
+    display: none;
+  }
+}
 .about__item--content {
+  position: relative;
   font-size: 18px;
   line-height: 1.6em;
   letter-spacing: 0.1em;
+  padding: 20px;
+  max-height: 500px;
+}
+@media only screen and (max-width: 1028px) {
+  .about__item--content {
+    max-height: 420px;
+    padding-bottom: 28px;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about__item--content {
+    padding-bottom: 0;
+  }
+}
+.about__item--content .scrolldown-box {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 1028px) {
+  .about__item--content .scrolldown-box {
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about__item--content .scrolldown-box {
+    padding-bottom: 20px;
+  }
+}
+.about__item--content .scrolldown {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(30, 30, 36, 0.8);
+  text-align: center;
+  font-size: 1.6rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media only screen and (max-width: 1028px) {
+  .about__item--content .scrolldown {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .about__item--content {
+    max-height: 40vh;
+  }
 }

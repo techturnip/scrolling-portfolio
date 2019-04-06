@@ -1,78 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tyler Turnipseed</title>
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tyler Turnipseed</title>
 
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet" />
 
-  <body>
-    <div id="horizontalWrapper" class="horizontalWrapper">
-      <header id="home" class="header">
-        <div
-          data-aos="flip-right"
-          data-aos-duration="2000"
-          class="header__wrapper"
-        >
-          <h1
-            data-aos="fade-down"
-            data-aos-duration="3000"
-            class="header__heading"
-          >
-            Tyler Turnipseed
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            class="header__subheading"
-          >
-            Aspiring Web Developer
-          </p>
-          <p class="header__social-icons">
-            <a class="fab fa-github fa-3x" href="#"></a>
-            <a class="fab fa-twitter fa-3x" href="#"></a>
-            <a class="fab fa-linkedin-in fa-3x" href="#"></a>
-          </p>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <div id="horizontalWrapper">
+    <div id="home"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div data-aos="flip-right" data-aos-duration="2000" class="header__wrapper">
+        <h1 data-aos="fade-down" data-aos-duration="3000" class="header__heading">
+          Tyler Turnipseed
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="3000" class="header__subheading">
+          Web Developer
+        </p>
+        <p class="header__social-icons">
+          <a class="fab fa-github fa-3x" href="#"></a>
+          <a class="fab fa-twitter fa-3x" href="#"></a>
+          <a class="fab fa-linkedin-in fa-3x" href="#"></a>
+        </p>
+      </div>
+      <!-- ./header__wrapper -->
+    </header>
+    <!-- ./header -->
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- ABOUT SECTION -->
+      <section class="content__section about">
+        <!-- Image -->
+        <div class="about__media">
+          <img src="img/me.jpg" alt="A picture of Tyler Turnipseed" class="about__img" />
         </div>
-        <!-- ./header__wrapper -->
-      </header>
-      <!-- ./header -->
 
-      <main class="content">
-        <!-- ABOUT SECTION -->
-        <section id="about" class="content__section about">
-          <!-- Image -->
-          <div class="about__media">
-            <img
-              src="img/me.jpg"
-              alt="A picture of Tyler Turnipseed"
-              class="about__img"
-            />
+        <!-- About Content -->
+        <div class="about__content">
+          <div class="about__item about__item--header">
+            <h2>Hi, my name is <strong>Tyler</strong></h2>
           </div>
-
-          <!-- About Content -->
-          <div class="about__content">
-            <div class="about__item about__item--header">
-              <h2>Hi, my name is <strong>Tyler</strong></h2>
-              <p>I'm an aspiring web developer</p>
-            </div>
-            <!-- ./about__item -->
-            <div class="about__item about__item--content">
+          <!-- ./about__item -->
+          <div class="about__item about__item--content">
+            <div class="scrolldown-box">
               <p>
                 I have been practicing HTML &amp; CSS for over a decade as a
                 hobby. I have enrolled in various courses on Udemy.com that span
@@ -97,34 +79,38 @@
                 into a career.
               </p>
             </div>
+            <div class="scrolldown"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
           </div>
-          <!-- ./about__content -->
-        </section>
-
-        <section id="portfolio" class="section"></section>
-      </main>
-    </div>
-
-    <nav class="navbar">
-      <div class="navbar__wrapper">
-        <a class="navbar__brand" href="#home">@techTurnip</a>
-        <a class="navbar__link" href="#about">About</a>
-        <a class="navbar__link" href="#portfolio">Portfolio</a>
-        <a class="navbar__link" href="#">Resume</a>
-        <a class="navbar__link" href="#">Contact</a>
-        <div class="arrow-nav">
-          <a class="arrow-nav__icon" href="#about">&raquo;</a>
         </div>
-        <!-- ./arrow-nav -->
-      </div>
-      <!-- ./navbar__wrapper -->
-    </nav>
-    <!-- ./navbar -->
+        <!-- ./about__content -->
+        <div id="about"></div>
+      </section>
 
-    <script src="js/mousewheel.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+      <section id="portfolio" class="section"></section>
+    </main>
+  </div>
+
+  <nav class="navbar">
+    <div class="navbar__wrapper">
+      <a class="navbar__brand" href="#home">@techTurnip</a>
+      <a class="navbar__link" href="#about">About</a>
+      <a class="navbar__link" href="#portfolio">Portfolio</a>
+      <a class="navbar__link" href="#">Resume</a>
+      <a class="navbar__link" href="#">Contact</a>
+      <div class="arrow-nav">
+        <a class="arrow-nav__icon" href="#about">&raquo;</a>
+      </div>
+      <!-- ./arrow-nav -->
+    </div>
+    <!-- ./navbar__wrapper -->
+  </nav>
+  <!-- ./navbar -->
+
+  <script src="js/mousewheel.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>

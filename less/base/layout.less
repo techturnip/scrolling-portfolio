@@ -1,19 +1,24 @@
-.horizontalWrapper {
+#horizontalWrapper {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  height: 94vh;
+  height: 93.8vh;
+
+  @media only screen and (max-width: 600px) {
+    height: 91vh;
+  }
 }
 
 ::-webkit-scrollbar {
   display: none;
-  background: @raisin-black;
+  background: @raisin-black-trans;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: @light;
+  background: @khaki;
+  border-radius: 10px;
 }
 
 .content {
